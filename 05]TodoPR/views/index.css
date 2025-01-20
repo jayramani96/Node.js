@@ -1,0 +1,48 @@
+body {
+    background-color: #f8f9fa;
+    font-family: "Parkinsans", serif;
+}
+h1 {
+    color: #343a40;
+}
+.form-control {
+    border-color: #17a2b8;
+    font-family: "Parkinsans", serif;
+}
+.btn-primary {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+.btn-primary:hover {
+    background-color: #138496;
+    border-color: #138496;
+}
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    height: auto;
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #495057;
+}
+.card {
+    height: auto;
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
