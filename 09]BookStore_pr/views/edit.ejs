@@ -1,0 +1,10 @@
+<form action="/updateData" method="post">
+    <input type="text" hidden name="id" value="<%=data.id%>">
+    <input type="text" placeholder="Enter Book Image" value="<%=data.bookImage%>" name="bookImage">
+    <input type="text" placeholder="Enter Book Title" value="<%=data.bookTitle%>" name="bookTitle">
+    <input type="text" placeholder="Enter Book Author Name" value="<%=data.bookAuthor%>" name="bookAuthor">
+    <input type="text" placeholder="Enter Book PublishDate" value="<%=data.publishDate%>" name="publishDate">
+    <input type="text" placeholder="Enter Book Price" value="<%=data.bookPrice%>" name="bookPrice">
+    <input type="text" placeholder="Enter Book Sold Copy" value="<%=data.soldCopies%>" name="soldCopies">
+    <button type="submit">Update</button>
+</form>
