@@ -1,11 +1,10 @@
 const mongoose = require("mongoose");
 
-mongoose.connect ('mongodb://127.0.0.1/Node10');
-
+mongoose.connect("mongodb://127.0.0.1/multerPractice");
 const db = mongoose.connection;
 
-db.once("open", (err)=>{
-    err ? console.log(err) : console.log("database connected");
+db.once("open", err => {
+    err ? console.log("Error : ", err) : console.log("Database Connect...");
 })
 
 module.exports = db;

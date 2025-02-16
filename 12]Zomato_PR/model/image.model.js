@@ -25,3 +25,7 @@ const schema = mongoose.Schema({
 
 const imageSchema = mongoose.model("imageDB", schema);
 module.exports = imageSchema;
+
+
+
+
