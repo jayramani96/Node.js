@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Responsive Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<table class="table">
+  <thead>
+    <th>S.No</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Prefer</th>
+    <th>Status</th>
+  </thead>
+  <tbody>
+    <% data.map((e,i)=>{%>
+      <tr>
+        <th scope="row"><%=i+1%></th>
+        <td><%=e.name%></td>
+        <td><%=e.email%></td>
+        <td><%=e.gender%></td>
+        <td><%=e.prefer%></td>
+      
+        <td><a href="/edit?id=<%=e.id%>"><button><i class="fa-solid fa-pen-to-square"></i></a>
+        <a href="/delete?id=<%=e.id%>"><button><button><i class="fa-solid fa-trash"></i></a></td>
+      </tr>
+    <%})%>
+  </tbody>
+</table>
+</body>
+</html>
